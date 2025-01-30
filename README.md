@@ -31,3 +31,6 @@ Impact — это современный и уникальный бизнес- �
 
 ## Авторское право
 Автор темы BootstrapMade.com с лицензией [https://bootstrapmade.com/license/](https://bootstrapmade.com/license/).
+
+
+<img src="https://github.com/gearmagicru/gm-theme-impact/blob/master/screenshot.png?raw=true" width="100%">
