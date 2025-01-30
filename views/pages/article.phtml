@@ -1,0 +1,26 @@
+<?php
+/**
+ * Статья.
+ * 
+ * Шаблон страницы.
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ * 
+ * @var \Gm\View\View $this
+ */
+
+echo $this->renderFrom('../partials/breadcrumbs');
+?>
+<section class="blog">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="row g-5">
+            <div class="col-lg-12">
+                <?= $this->widget('gm.wd.article', []) ?>
+            </div>
+        </div>
+    </div>
+</section>

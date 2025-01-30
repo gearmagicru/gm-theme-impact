@@ -1,0 +1,47 @@
+<?php
+/**
+ * Шаблон ошибки 404 (Not Found).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error 404 (Not Found)</title>
+    <link type="image/png" href="<?= Gm::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Gm::getAlias('@theme::/vendors/bootstrap/css/bootstrap.min.css') ?>" />
+    <link rel="stylesheet" href="<?= Gm::getAlias('@theme::/assets/css/main.css') ?>" />
+</head>
+
+<body>
+    <section class="blog">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row g-5">
+                <div class="col-lg-12">
+                    <article class="blog-details">
+                        <h2 class="title">Error 404 (Not Found)</h2>
+                        <div class="content">
+                            <p>You are trying to access a page that may have been deleted.</p>
+                            <ol>
+                                <li>Please check that the address you are entering is correct and/or correct it..</li>
+                                <li>Clear your browser's cache and try the page again.</li>
+                                <li>Go to the main page of the site and try to find the information you need by clicking on the links.</li>
+                                <li>Look for the page in search engines - the page may have been published at a new address.</li>
+                            </ol>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

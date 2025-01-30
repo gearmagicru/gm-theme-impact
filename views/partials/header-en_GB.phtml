@@ -1,0 +1,31 @@
+<?php
+/**
+ * Заголовок (en_GB).
+ * 
+ * Часть макета страницы.
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ */
+
+?>
+<header id="header" class="header d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <?= $this->beginMarkup('logo', 'Логотип сверху') ?>
+    <a href="/" class="logo d-flex align-items-center"><h1>Impact<span>.</span></h1></a>
+  <?= $this->endMarkup() ?>
+  <!-- navbar -->
+  <?= $this->widget('gm.wd.menu:top', [
+      'menuId' => 1,
+      'navTag' => 'nav',
+      'navOptions' => ['id' => 'navbar', 'class' => 'navbar'],
+      'submenuTemplate' => "<li class=\"dropdown\"><a href=\"#\"><span>{label}</span> <i class=\"bi bi-chevron-down dropdown-indicator\"></i></a> \n{items}\n</li>"
+      ]) ?>
+    <!-- .navbar -->
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  </div>
+</header>

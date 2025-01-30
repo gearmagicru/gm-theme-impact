@@ -1,0 +1,48 @@
+<?php
+/**
+ * Шаблон ошибки 401 (Unauthorized).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error 401 (Unauthorized)</title>
+    <link type="image/png" href="<?= Gm::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Gm::getAlias('@theme::/vendors/bootstrap/css/bootstrap.min.css') ?>" />
+    <link rel="stylesheet" href="<?= Gm::getAlias('@theme::/assets/css/main.css') ?>" />
+</head>
+
+<body>
+    <section class="blog">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row g-5">
+                <div class="col-lg-12">
+                    <article class="blog-details">
+                        <h2 class="title">Error 401 (Unauthorized)</h2>
+                        <div class="content">
+                            <p>You are trying to access a page that must first be logged in using a valid browsing user ID and password. </p>
+                            <h3>To resolve the 401 error message:</h3>
+                            <ol>
+                                <li>Make sure the URL you are trying to access is correct, then enter it again in the address bar and click <strong>Enter</strong>.</li>
+                                <li>If you are trying to access a page that is not the homepage, go to the URL of the homepage (eg www.site.com, then find the site login link, click on it and enter your details.</li>
+                                <li>If you are using incorrect credentials, please follow the instructions on the site to reset your password, or contact the site owner to request access.</li>
+                                <li>Please use another supported browser. If the error only occurs in one browser, clear your browser's cache.</li>
+                            </ol>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

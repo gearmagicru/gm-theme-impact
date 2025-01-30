@@ -1,0 +1,33 @@
+<?php
+/**
+ * Новость.
+ * 
+ * Шаблон статьи.
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ * 
+ * @var \Gm\Site\Data\Model\Article $article
+ * @var bool $showTextBefore
+ * @var string $textBefore
+ * @var string $header
+ * @var string $text
+ * @var bool $showTextAfter
+ * @var string $textAfter
+ */
+
+//echo '[[' . $this->widget('gm.wd.lightgallery', ['galleryId' => 1]);
+
+?>
+<article class="blog-details">
+    <?= $showTextBefore ? $textBefore : '' ?>
+<?php if ($showHeader) : ?>
+    <h2 class="title"><?= $header ?></h2>
+<?php endif ?>
+    <div style="text-align:right"><?= $this->page->formatDate($publishDate, 'd MMMM Y') ?></div>
+    <div class="content"><?= $text ?></div>
+    <?= $showTextAfter ? $textAfter : '' ?>
+</article>

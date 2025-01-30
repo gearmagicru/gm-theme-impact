@@ -1,0 +1,48 @@
+<?php
+/**
+ * Шаблон ошибки 401 (Unauthorized).
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ошибка 401 (Неавторизованный доступ)</title>
+    <link type="image/png" href="<?= Gm::getAlias('@theme::/assets/ico/favicon.ico') ?>" rel="icon" sizes="16x16">
+    <link rel="stylesheet" href="<?= Gm::getAlias('@theme::/vendors/bootstrap/css/bootstrap.min.css') ?>" />
+    <link rel="stylesheet" href="<?= Gm::getAlias('@theme::/assets/css/main.css') ?>" />
+</head>
+
+<body>
+    <section class="blog">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row g-5">
+                <div class="col-lg-12">
+                    <article class="blog-details">
+                        <h2 class="title">Ошибка 401 (Неавторизованный доступ)</h2>
+                        <div class="content">
+                            <p>Вы пытаетесь получить доступ к странице, на которую нужно сначала войти, используя действительный ID пользователя и пароль для просмотра. </p>
+                            <h3>Чтобы устранить сообщение об ошибке 401:</h3>
+                            <ol>
+                                <li>Убедитесь, что URL, к которому вы пытаетесь получить доступ, правильный, затем введите его еще раз в адресную строку и нажмите <strong>Enter</strong>.</li>
+                                <li>Если вы пытаетесь получить доступ к странице, которая не является главной, перейдите по URL-адресу главной страницы (например, www.site.com), затем найдите ссылку для входа на сайт, нажмите на нее и введите ваши данные.</li>
+                                <li>Если вы используете неверные данные, следуйте инструкциям на сайте, чтобы сбросить пароль, или обратитесь к владельцу сайта, чтобы запросить доступ.</li>
+                                <li>Воспользуйтесь другим поддерживаемым браузером. Если ошибка возникает только в одном браузере, очистите кеш вашего браузера.</li>
+                            </ol>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<?php
+/**
+ * Новости.
+ * 
+ * Шаблон страницы.
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ * 
+ * @var \Gm\View\View $this
+ */
+/**
+'category'  => 'current',
+'itemsView' => '/partials/news-main-items',
+'mode'      => 'full',
+'pager' => [
+    'itemTpl'       => '<li>{link}</li>',
+    'activeItemTpl' => '<li class="active">{link}</li>',
+    'options'       => ['class' => 'justify-content-center']
+]
+ */
+echo $this->renderFrom('../partials/breadcrumbs');
+?>
+<section class="blog">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="row g-5">
+            <div class="col-lg-12">
+                <?= $this->widget('gm.wd.articles', ['itemsView'=>'/partials/news-main-items','pagination'=>['defaultLimit'=>'3',],'sort'=>[],]) ?>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<?php
+/**
+ * Навигационная цепочка для материала с категорией.
+ * 
+ * Часть макета страницы.
+ * 
+ * @author Anton Tivonenko <anton.tivonenko@gmail.com>
+ * @copyright Copyright (c) 2015 GearMagic Web-студия
+ * @package Theme
+ * @subpackage Impact
+ * @since 1.0
+ */
+
+$header = $this->page->getCategoryParam('header');
+?>
+<div class="breadcrumbs">
+<?php if ($header) : ?>
+    <div class="page-header d-flex align-items-center" style="background-image: url('');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2><?= $header ?></h2>
+                    <?php if ($announce = $this->page->getCategoryParam('announce')) : echo '<p>', $announce, '</p>'; endif ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif ?>
+    <div class="container">
+    <?= $this->widget('gm.wd.breadcrumbs', ['navTag'=>'nav','navOptions'=>['aria-label'=>'breadcrumb',],'tag'=>'ol','options'=>['class'=>'breadcrumb',],'itemTemplate'=>'<li class="breadcrumb-item">{link}</li>','activeItemTemplate'=>'<li class="breadcrumb-item active">{link}</li>[]','ui'=>'bootstrap',]) ?>
+    </div>
+</div>
+        
